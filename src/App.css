@@ -1,4 +1,8 @@
 .App {
   text-align: center;
+  background: url("./imag/background2.jpg") ;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
 }
 
