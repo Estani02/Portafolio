@@ -1,0 +1,25 @@
+.navBar{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: black;
+    color: #71787B;
+}
+
+.logo{
+    font-weight: 600;
+    font-size: 2em;
+    text-decoration: none;
+    /* color: #71787B; */
+    color: rgb(255, 255, 255);
+}
+
+.logo::before{
+    content: "<";
+    color: #71787B;
+}
+
+.logo::after{
+    content: " />";
+    color: #71787B;
+}
