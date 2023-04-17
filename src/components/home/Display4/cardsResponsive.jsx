@@ -2,14 +2,14 @@
 import React from 'react';
 import github from '../../../imag/github.svg';
 import deploy from '../../../imag/deploy.svg';
-import clima from '../../../imag/clima.svg';
-import movie from '../../../imag/movie.svg';
-import food from '../../../imag/food.svg';
-import refugio from '../../../imag/refugio.svg';
+import clima from '../../../imag/clima.jpg';
+import movie from '../../../imag/movie.jpg';
+import food from '../../../imag/food.jpg';
+import refugio from '../../../imag/refugio.jpg';
 import { useTranslation } from 'react-i18next';
 
 export const CardsResponsive = () => {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
 
   return (
     <ul className="flex flex-col p-3 md:hidden gap-5">

@@ -2,17 +2,17 @@
 /* eslint-disable no-lone-blocks */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState } from 'react';
-import clima from '../../../imag/clima.svg';
-import movie from '../../../imag/movie.svg';
-import food from '../../../imag/food.svg';
-import refugio from '../../../imag/refugio.svg';
+import clima from '../../../imag/clima.jpg';
+import movie from '../../../imag/movie.jpg';
+import food from '../../../imag/food.jpg';
+import refugio from '../../../imag/refugio.jpg';
 import github from '../../../imag/github.svg';
 import deploy from '../../../imag/deploy.svg';
 import { CardsResponsive } from './cardsResponsive';
 import { useTranslation } from 'react-i18next';
 
 export const Display4 = () => {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
 
   const [estaSobreImagen, setEstaSobreImagen] = useState({
     refugio: false,

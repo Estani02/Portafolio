@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import i18next from 'i18next';
-import { I18nextProvider, initReactI18next } from 'react-i18next';
+import { I18nextProvider } from 'react-i18next';
 import en_global from './translation/en/global.json';
 import es_global from './translation/es/global.json';
 

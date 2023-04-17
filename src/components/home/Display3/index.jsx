@@ -8,7 +8,7 @@ import crative from '../../../imag/creative.svg';
 import { useTranslation } from 'react-i18next';
 
 export const Display3 = () => {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
 
 
   return (

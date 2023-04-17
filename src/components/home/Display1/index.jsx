@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 export const Display1 = () => {
   const [show, setShow] = useState(false);
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
 
   useEffect(() => {
     setShow(true);

@@ -6,7 +6,7 @@ import github from '../../../imag/github_blue.svg';
 import { useTranslation } from 'react-i18next';
 
 const Display5 = () => {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
 
   return (
     <section className="bg-[#000000] p-3 md:p-0 h-screen">
@@ -23,16 +23,16 @@ const Display5 = () => {
             <span className="font-bold text-[#FFFFFFFF] group-hover:text-[#bfb9b9] transition-colors duration-500">{t('display_5.gmail')}</span>
           </a>
         </li>
-        <li className='hover:scale-125 transition-transform duration-500 group'>
+        <li className='md:hover:scale-125 md:transition-transform duration-500 group'>
           <a href="https://www.linkedin.com/in/estanislao-olmedo-208510247/" target='_blank' className="flex flex-col items-center justify-center">
             <img src={linkedin} alt="Icon Linkedin" className="h-[3rem]" />
             <span className="font-bold text-[#FFFFFFFF] group-hover:text-[#bfb9b9] transition-colors duration-500">{t('display_5.linkedin')}</span>
           </a>
         </li>
-        <li className='hover:scale-125  transition-transform group duration-500'>
+        <li className='md:hover:scale-125 md:transition-transform duration-500 group'>
           <a href="https://github.com/Estani02" target='_blank' className="flex flex-col items-center justify-center">
             <img src={github} alt="Icon GituHub" className="h-[3rem]" />
-            <span className="font-bold group-hover:text-[#bfb9b9] transition-colors duration-500 text-[#FFFFFFFF]" id='Contact'>{t('display_5.github')}</span>
+            <span className="font-bold text-[#FFFFFFFF] group-hover:text-[#bfb9b9] transition-colors duration-500" id='Contact'>{t('display_5.github')}</span>
           </a>
         </li>
       </ul>

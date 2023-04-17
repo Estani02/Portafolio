@@ -20,7 +20,7 @@ import { useTranslation } from 'react-i18next';
 
 
 export const Display2 = () => {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
 
   return (
     <section className="flex flex-col gap-4 md:gap-0 md:flex-row justify-evenly p-3 md:p-0">
