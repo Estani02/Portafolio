@@ -1,0 +1,57 @@
+.background {
+    text-align: center;
+    background: url("../../../imag/background2.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    filter: url("../../../imag/background2.jpg") brightness(30%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1000;
+}
+
+.background2 {
+  text-align: center;
+  background: url("../../../imag/background2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  filter: url("../../../imag/background2.jpg") brightness(30%);
+  height: 5.5rem;
+  width: 100%;
+}
+
+.typewriter-wrapper {
+  font-weight: bold;
+  font-size: 2.25rem;
+  color: #147CE5;
+}
+
+.typewriter-cursor {
+  font-weight: bold;
+  font-size: 2.25rem;
+  color: #FFFF;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .background2 {
+      height: 10rem;
+  }
+}
