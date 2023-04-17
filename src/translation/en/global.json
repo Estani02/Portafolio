@@ -1,0 +1,63 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "service": "Service",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "display_1": {
+        "hello": "Hello, I´m ",
+        "trans": "Transforming your ideas into digital reality."
+    },
+    "display_2": {
+        "about": "About",
+        "im_intro": "I’m introduce myself",
+        "skill": "My Skills",
+        "learning": "In Learning",
+        "p": "My name is Estanislao, a highly motivated programmer with experience creating custom software solutions for a variety of clients. I’m trained in the design and development of web applications. I’m passionate about innovation and am always looking for ways to use technology to improve efficiency and performance. In addition, I have a great ability to work in a team and collaborate with others toachieve the objectives of the project in a timely manner. I’m looking for challenging opportunities to continue growing in my career as a programmer."
+    },
+    "display_3": {
+        "h2": "Service",
+        "h4": "Service that i can offer to my clients",
+        "Development": {
+            "titile": "Development",
+            "description": "Design and build custom websites from scratch, meeting specific client requirements."
+        },
+        "Maintenance": {
+            "titile": "Maintenance",
+            "description": "Updating and modifying existing websites, ensuring they work efficiently and effectively at all times."
+        },
+        "SEO": {
+            "titile": "SEO",
+            "description": "Implementation of techniques and strategies to improve the visibility and ranking of a website in search engines."
+        },
+        "Web_Application": {
+            "titile": "Web Application Integration",
+            "description": "Integration of different web applications to improve functionality and user experience."
+        },
+        "Performance": {
+            "titile": "Performance",
+            "description": "Retaining users is crucial to improving conversions. High-performing sites engage and retain users."
+        },
+        "Creative_Design": {
+            "titile": "Creative Design",
+            "description": "A good and attractive web design helps you keep your leads on your site, which is the digital face of your business."
+        }
+    },
+    "display_4": {
+        "h2": "Projects",
+        "h4": "Here you can see the projects I've been working on",
+        "more_details": "More details of the technologies in my repo.",
+        "area": "DEVELOPMENT AREA: ",
+        "tecno": "TECHNOLOGIES: ",
+        "repo": "Repository"
+    },
+    "display_5": {
+        "h2": "Contact",
+        "h4": "Contact me if you want us to work together",
+        "gmail": "Mail Me",
+        "linkedin": "Contact Me",
+        "github": "Follow Me"
+    }
+}

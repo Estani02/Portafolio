@@ -1,0 +1,63 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "service": "Servicios",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+    "display_1": {
+        "hello": "Hola, soy ",
+        "trans": "Transformando tus ideas en realidad digital."
+    },
+    "display_2": {
+        "about": "Sobre mí",
+        "im_intro": "",
+        "skill": "Mis Skills",
+        "learning": "En aprendizaje",
+        "p": "Mi nombre es Estanislao, un programador altamente motivado con experiencia en la creación de soluciones de software personalizadas para una variedad de clientes. Estoy capacitado en el diseño y desarrollo de aplicaciones web. Me apasiona la innovación y siempre estoy buscando formas de utilizar la tecnología para mejorar la eficiencia y el rendimiento. Además, tengo una gran capacidad para trabajar en equipo y colaborar con los demás para lograr los objetivos del proyecto en tiempo y forma. Estoy buscando oportunidades desafiantes para seguir creciendo en mi carrera como programador."
+    },
+    "display_3": {
+        "h2": "Servicios",
+        "h4": "Servicio que puedo ofrecer a mis clientes",
+        "Development": {
+            "titile": "Desarrollo",
+            "description": "Diseño y creación de sitios web personalizados desde cero, cumpliendo con los requisitos específicos del cliente."
+        },
+        "Maintenance": {
+            "titile": "Mantenimiento",
+            "description": "Actualizar y modificar sitios web existentes, asegurando que funcionen de manera eficiente y eficaz en todo momento."
+        },
+        "SEO": {
+            "titile": "SEO",
+            "description": "Implementación de técnicas y estrategias para mejorar la visibilidad y posicionamiento de un sitio web en los motores de búsqueda."
+        },
+        "Web_Application": {
+            "titile": "Integración de Aplicaciones Web",
+            "description": "Integración de diferentes aplicaciones web para mejorar la funcionalidad y la experiencia del usuario."
+        },
+        "Performance": {
+            "titile": "Performance",
+            "description": "Retener a los usuarios es crucial para mejorar las conversiones. Los sitios de alto rendimiento atraen y retienen a los usuarios."
+        },
+        "Creative_Design": {
+            "titile": "Diseño Creativo",
+            "description": "Un buen y atractivo diseño web lo ayuda a mantener sus clientes potenciales en su sitio, que es la cara digital de su negocio."
+        }
+    },
+    "display_4": {
+        "h2": "Proyectos",
+        "h4": "Aquí puedes ver los proyectos en los que he estado trabajando",
+        "more_details": "Más detalles de las tecnologías en mi repositorio.",
+        "area": "AREA DE DESARROLLO: ",
+        "tecno": "TECNOLOGÍAS: ",
+        "repo": "Repositorio"
+    },
+    "display_5": {
+        "h2": "Contacto",
+        "h4": "Contáctame si quieres que trabajemos juntos",
+        "gmail": "Mi Mail",
+        "linkedin": "Contáctame",
+        "github": "Seguime"
+    }
+}
