@@ -1,8 +1,8 @@
 import React from 'react';
-import css from '../../../imag/css.svg';
+import css from '../../../imag/css.jpg';
 import figma from '../../../imag/figma.svg.png';
 import git from '../../../imag/git.png';
-import html from '../../../imag/html.svg';
+import html from '../../../imag/html.jpg';
 import javascrip from '../../../imag/javascrip.svg';
 import jira from '../../../imag/jira.svg';
 import node from '../../../imag/node.png';
@@ -16,7 +16,7 @@ import github from '../../../imag/github.svg';
 import reactNative from '../../../imag/ReactNative.svg';
 import typescrip from '../../../imag/Typescrip.svg';
 import { useTranslation } from 'react-i18next';
-
+import { Link } from 'react-router-dom';
 
 
 export const Display2 = () => {
@@ -30,31 +30,34 @@ export const Display2 = () => {
         <p className='font-medium'>
           {t('display_2.p')}
         </p>
+        <Link to={'/cv-estanislao-olmedo'} target="_blank" rel="noopener noreferrer" className='text-white p-2 rounded-lg bg-[#147CE5] font-bold text-center md:hover:bg-[#0f58a1] transition-colors duration-500'>
+          {t('display_2.cv')}
+        </Link>
       </div>
       <div className='flex flex-col justify-center items-center'>
         <h4 className='text-[1.25rem] md:text-[1.5rem] font-semibold mb-6'>{t('display_2.skill')}</h4>
         <div className='grid grid-cols-4 grid-rows-4 gap-8 justify-items-center'>
-          <img className='h-[40px] md:h-[64px]' src={javascrip} alt="logo Javascrip" />
-          <img className='h-[40px] md:h-[64px]' src={html} alt="logo HTML" />
-          <img className='h-[40px] md:h-[64px]' src={css} alt="logo CSS" />
-          <img className='h-[40px] md:h-[64px]' src={react} alt="logo React" />
-          <img className='h-[40px] md:h-[64px]' src={redux} alt="logo Redux" />
-          <img className='h-[40px] md:h-[64px]' src={talw} alt="logo Tailwndcss" />
-          <img className='h-[40px] md:h-[64px]' src={node} alt="logo Node.js" />
-          <img className='h-[40px] md:h-[64px]' src={seque} alt="logo Sequelize" />
-          <img className='h-[40px] md:h-[64px]' src={pg} alt="logo pgAdmi" />
-          <img className='h-[40px] md:h-[64px]' src={git} alt="logo Git" />
-          <img className='h-[40px] md:h-[64px]' src={github} alt="logo Git" />
-          <img className='h-[40px] md:h-[64px]' src={visual} alt="logo GitHub" />
-          <img className='h-[40px] md:h-[64px]' src={jira} alt="logo Jira" />
-          <img className='h-[40px] md:h-[64px]' src={figma} alt="logo Figma" />
+          <img className='h-[40px] md:h-[64px]' title='Javascrip' src={javascrip} alt="logo Javascrip" />
+          <img className='h-[40px] md:h-[64px]' title='HTML' src={html} alt="logo HTML" />
+          <img className='h-[40px] md:h-[64px]' title='CSS' src={css} alt="logo CSS" />
+          <img className='h-[40px] md:h-[64px]' title='React' src={react} alt="logo React" />
+          <img className='h-[40px] md:h-[64px]' title='Redux' src={redux} alt="logo Redux" />
+          <img className='h-[40px] md:h-[64px]' title='Tailwndcss' src={talw} alt="logo Tailwndcss" />
+          <img className='h-[40px] md:h-[64px]' title='Node.js' src={node} alt="logo Node.js" />
+          <img className='h-[40px] md:h-[64px]' title='Sequelize' src={seque} alt="logo Sequelize" />
+          <img className='h-[40px] md:h-[64px]' title='pgAdmi' src={pg} alt="logo pgAdmi" />
+          <img className='h-[40px] md:h-[64px]' title='Git' src={git} alt="logo Git" />
+          <img className='h-[40px] md:h-[64px]' title='GitHub' src={github} alt="logo GitHub" />
+          <img className='h-[40px] md:h-[64px]' title='Visual Studio' src={visual} alt="logo Visual" />
+          <img className='h-[40px] md:h-[64px]' title='Jira' src={jira} alt="logo Jira" />
+          <img className='h-[40px] md:h-[64px]' title='Figma' src={figma} alt="logo Figma" />
         </div>
       </div>
       <div className='flex flex-col items-center justify-center'>
         <h4 className='text-[1.25rem] md:text-[1.5rem] font-semibold mb-6'>{t('display_2.learning')}</h4>
         <div className='flex flex-row gap-6'>
-          <img src={reactNative} alt="React Native" className='h-[40px] md:h-[64px]' />
-          <img src={typescrip} alt="TypeScrip" className='h-[40px] md:h-[64px]' />
+          <img src={reactNative} alt="React Native" className='h-[40px] md:h-[64px]' title='React Native' />
+          <img src={typescrip} alt="TypeScrip" className='h-[40px] md:h-[64px]' title='TypeScrip' />
         </div>
       </div>
     </section>
