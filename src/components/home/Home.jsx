@@ -6,10 +6,12 @@ import { Display4 } from "./Display4";
 import Display5 from "./Display5";
 import s from './Display1/Display1.module.css';
 import { Footer } from "./Display6";
+import NavBar from "../NavBar/NavBar";
 
 export default function Home() {
   return (
     <div>
+      <NavBar />
       <Display1 />
       <Display2 />
       <div className={s.background2} />
