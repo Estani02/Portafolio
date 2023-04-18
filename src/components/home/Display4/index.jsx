@@ -12,7 +12,7 @@ import { CardsResponsive } from './cardsResponsive';
 import { useTranslation } from 'react-i18next';
 
 export const Display4 = () => {
-  const [t] = useTranslation("global");
+  const [t] = useTranslation('global');
 
   const [estaSobreImagen, setEstaSobreImagen] = useState({
     refugio: false,
@@ -24,16 +24,36 @@ export const Display4 = () => {
   function manejarMouseSobreImagen(card) {
     switch (card) {
       case 'refugio':
-        setEstaSobreImagen({ ...estaSobreImagen, refugio: true });
+        setEstaSobreImagen({
+          refugio: true,
+          food: false,
+          clima: false,
+          movie: false,
+        });
         break;
       case 'food':
-        setEstaSobreImagen({ ...estaSobreImagen, food: true });
+        setEstaSobreImagen({
+          refugio: false,
+          food: true,
+          clima: false,
+          movie: false,
+        });
         break;
       case 'movie':
-        setEstaSobreImagen({ ...estaSobreImagen, movie: true });
+        setEstaSobreImagen({
+          refugio: false,
+          food: false,
+          clima: false,
+          movie: true,
+        });
         break;
       case 'clima':
-        setEstaSobreImagen({ ...estaSobreImagen, clima: true });
+        setEstaSobreImagen({
+          refugio: false,
+          food: false,
+          clima: true,
+          movie: false,
+        });
         break;
       default:
         break;
@@ -60,14 +80,19 @@ export const Display4 = () => {
   }
 
   return (
-    <section className="mt-[2.5rem] md:mt-[10rem] bg-[#000000] py-3">
-      <div className="mb-12 md:p-0 p-3 md:ml-[5rem] md:mt-20 flex flex-col gap-4" id='Projects'>
-        <h2 className="text-[2rem] md:text-[2.25rem] font-bold text-[#FFFFFF]">{t('display_4.h2')}</h2>
-        <h4 className="text-[1.25rem] md:text-[1.5rem] font-semibold text-[#FFFFFF]">
-        {t('display_4.h4')}
+    <section className="mt-[2.5rem] bg-[#000000] py-3 md:mt-[10rem]">
+      <div
+        className="mb-12 flex flex-col gap-4 p-3 md:ml-[5rem] md:mt-20 md:p-0"
+        id="Projects"
+      >
+        <h2 className="text-[2rem] font-bold text-[#FFFFFF] md:text-[2.25rem]">
+          {t('display_4.h2')}
+        </h2>
+        <h4 className="text-[1.25rem] font-semibold text-[#FFFFFF] md:text-[1.5rem]">
+          {t('display_4.h4')}
         </h4>
       </div>
-      <ul className="md:grid grid-cols-2 grid-rows-2 justify-items-center gap-8 hidden">
+      <ul className="hidden grid-cols-2 grid-rows-2 justify-items-center gap-8 md:grid">
         <li className="relative box-border flex  h-[275.69px] w-[588px] items-center justify-center overflow-hidden rounded-lg bg-[#ffffff00] p-[10px]">
           <figure className="m-0 flex w-full items-center justify-center">
             <img
@@ -100,8 +125,8 @@ export const Display4 = () => {
                     <b className="text-[1rem]">{t('display_4.area')}</b>FrontEnd
                   </p>
                   <p className="text-[0.75rem] text-[#FFFFFFFF]">
-                    <b className="text-[1rem]">{t('display_4.tecno')}</b>React, Redux
-                    Toolkit, Tailwind, MUI Material
+                    <b className="text-[1rem]">{t('display_4.tecno')}</b>React,
+                    Redux Toolkit, Tailwind, MUI Material
                   </p>
                 </div>
                 <p className="text-[0.75rem] text-[#FFFFFFFF]">
@@ -121,7 +146,7 @@ export const Display4 = () => {
                     estaSobreImagen.refugio
                       ? 'z-20 bg-[#8080804f] backdrop-blur-lg'
                       : 'invisible'
-                  } flex w-[10rem] flex-row items-center justify-center rounded-lg py-2 group`}
+                  } group flex w-[10rem] flex-row items-center justify-center rounded-lg py-2`}
                   onMouseEnter={() => manejarMouseSobreImagen('refugio')}
                 >
                   <img
@@ -133,7 +158,7 @@ export const Display4 = () => {
                         : 'h-[0px] scale-90 opacity-0'
                     } transition-all duration-500 ease-out`}
                   />
-                  <span className="ml-[4px] font-semibold text-[#FFFFFFFF] group-hover:text-[#147CE5] transition-colors duration-500">
+                  <span className="ml-[4px] font-semibold text-[#FFFFFFFF] transition-colors duration-500 group-hover:text-[#147CE5]">
                     {t('display_4.repo')}
                   </span>
                 </a>
@@ -144,7 +169,7 @@ export const Display4 = () => {
                     estaSobreImagen.refugio
                       ? 'z-20 bg-[#8080804f] backdrop-blur-lg'
                       : 'invisible'
-                  } flex w-[10rem] flex-row items-center justify-center rounded-lg py-2 group`}
+                  } group flex w-[10rem] flex-row items-center justify-center rounded-lg py-2`}
                   onMouseEnter={() => manejarMouseSobreImagen('refugio')}
                 >
                   <img
@@ -156,7 +181,7 @@ export const Display4 = () => {
                         : 'h-[0px] scale-90 opacity-0'
                     } transition-all duration-500 ease-out`}
                   />
-                  <span className="ml-[4px] font-semibold text-[#FFFFFFFF] group-hover:text-[#147CE5] transition-colors duration-500">
+                  <span className="ml-[4px] font-semibold text-[#FFFFFFFF] transition-colors duration-500 group-hover:text-[#147CE5]">
                     Deploy
                   </span>
                 </a>
@@ -194,11 +219,12 @@ export const Display4 = () => {
                 </h4>
                 <div>
                   <p className="text-[0.75rem] text-[#FFFFFFFF]">
-                    <b className="text-[1rem]">{t('display_4.area')}</b>Full Stack
+                    <b className="text-[1rem]">{t('display_4.area')}</b>Full
+                    Stack
                   </p>
                   <p className="text-[0.75rem] text-[#FFFFFFFF]">
-                    <b className="text-[1rem]">{t('display_4.tecno')}</b>Express,
-                    Sequelize, Postgresql, React, Redux, CSS Module
+                    <b className="text-[1rem]">{t('display_4.tecno')}</b>
+                    Express, Sequelize, Postgresql, React, Redux, CSS Module
                   </p>
                 </div>
                 <p className="text-[0.75rem] text-[#FFFFFFFF]">
@@ -218,7 +244,7 @@ export const Display4 = () => {
                     estaSobreImagen.food
                       ? 'z-20 bg-[#8080804f] backdrop-blur-lg'
                       : 'invisible'
-                  } flex w-[10rem] flex-row items-center justify-center rounded-lg py-2 group`}
+                  } group flex w-[10rem] flex-row items-center justify-center rounded-lg py-2`}
                   onMouseEnter={() => manejarMouseSobreImagen('food')}
                 >
                   <img
@@ -230,7 +256,7 @@ export const Display4 = () => {
                         : 'h-[0px] scale-90 opacity-0'
                     } transition-all duration-500 ease-out`}
                   />
-                  <span className="ml-[4px] font-semibold text-[#FFFFFFFF] group-hover:text-[#147CE5] transition-colors duration-500">
+                  <span className="ml-[4px] font-semibold text-[#FFFFFFFF] transition-colors duration-500 group-hover:text-[#147CE5]">
                     {t('display_4.repo')}
                   </span>
                 </a>
@@ -241,7 +267,7 @@ export const Display4 = () => {
                     estaSobreImagen.food
                       ? 'z-20 bg-[#8080804f] backdrop-blur-lg'
                       : 'invisible'
-                  } flex w-[10rem] flex-row items-center justify-center rounded-lg py-2 group`}
+                  } group flex w-[10rem] flex-row items-center justify-center rounded-lg py-2`}
                   onMouseEnter={() => manejarMouseSobreImagen('food')}
                 >
                   <img
@@ -253,7 +279,7 @@ export const Display4 = () => {
                         : 'h-[0px] scale-90 opacity-0'
                     } transition-all duration-500 ease-out`}
                   />
-                  <span className="ml-[4px] font-semibold text-[#FFFFFFFF] group-hover:text-[#147CE5] transition-colors duration-500">
+                  <span className="ml-[4px] font-semibold text-[#FFFFFFFF] transition-colors duration-500 group-hover:text-[#147CE5]">
                     Deploy
                   </span>
                 </a>
@@ -292,7 +318,7 @@ export const Display4 = () => {
                 <div>
                   <p className="text-[0.75rem] text-[#FFFFFFFF]">
                     <b className="text-[1rem] text-[#FFFFFFFF]">
-                    {t('display_4.area')}
+                      {t('display_4.area')}
                     </b>
                     FrontEnd
                   </p>
@@ -320,7 +346,7 @@ export const Display4 = () => {
                     estaSobreImagen.movie
                       ? 'z-20 bg-[#8080804f] backdrop-blur-lg'
                       : 'invisible'
-                  } flex w-[10rem] flex-row items-center justify-center rounded-lg py-2 group`}
+                  } group flex w-[10rem] flex-row items-center justify-center rounded-lg py-2`}
                   onMouseEnter={() => manejarMouseSobreImagen('movie')}
                 >
                   <img
@@ -332,7 +358,7 @@ export const Display4 = () => {
                         : 'h-[0px] scale-90 opacity-0'
                     } transition-all duration-500 ease-out`}
                   />
-                  <span className="ml-[4px] font-semibold text-[#FFFFFFFF] group-hover:text-[#147CE5] transition-colors duration-500">
+                  <span className="ml-[4px] font-semibold text-[#FFFFFFFF] transition-colors duration-500 group-hover:text-[#147CE5]">
                     {t('display_4.repo')}
                   </span>
                 </a>
@@ -343,7 +369,7 @@ export const Display4 = () => {
                     estaSobreImagen.movie
                       ? 'z-20 bg-[#8080804f] backdrop-blur-lg'
                       : 'invisible'
-                  } flex w-[10rem] flex-row items-center justify-center rounded-lg py-2 group`}
+                  } group flex w-[10rem] flex-row items-center justify-center rounded-lg py-2`}
                   onMouseEnter={() => manejarMouseSobreImagen('movie')}
                 >
                   <img
@@ -355,7 +381,7 @@ export const Display4 = () => {
                         : 'h-[0px] scale-90 opacity-0'
                     } transition-all duration-500 ease-out`}
                   />
-                  <span className="ml-[4px] font-semibold text-[#FFFFFFFF] group-hover:text-[#147CE5] transition-colors duration-500">
+                  <span className="ml-[4px] font-semibold text-[#FFFFFFFF] transition-colors duration-500 group-hover:text-[#147CE5]">
                     Deploy
                   </span>
                 </a>
@@ -396,7 +422,8 @@ export const Display4 = () => {
                     <b className="text-[1rem]">{t('display_4.area')}</b>FrontEnd
                   </p>
                   <p className="text-[0.75rem] text-[#FFFFFFFF]">
-                    <b className="text-[1rem]">{t('display_4.tecno')}</b>React, CSS
+                    <b className="text-[1rem]">{t('display_4.tecno')}</b>React,
+                    CSS
                   </p>
                 </div>
                 <p className="text-[0.75rem] text-[#FFFFFFFF]">
@@ -416,7 +443,7 @@ export const Display4 = () => {
                     estaSobreImagen.clima
                       ? 'z-20 bg-[#8080804f] backdrop-blur-lg'
                       : 'invisible'
-                  } flex w-[10rem] flex-row items-center justify-center rounded-lg py-2 group`}
+                  } group flex w-[10rem] flex-row items-center justify-center rounded-lg py-2`}
                   onMouseEnter={() => manejarMouseSobreImagen('clima')}
                 >
                   <img
@@ -428,7 +455,7 @@ export const Display4 = () => {
                         : 'h-[0px] scale-90 opacity-0'
                     } transition-all duration-500 ease-out`}
                   />
-                  <span className="ml-[4px] font-semibold text-[#FFFFFFFF] group-hover:text-[#147CE5] transition-colors duration-500">
+                  <span className="ml-[4px] font-semibold text-[#FFFFFFFF] transition-colors duration-500 group-hover:text-[#147CE5]">
                     {t('display_4.repo')}
                   </span>
                 </a>
@@ -439,7 +466,7 @@ export const Display4 = () => {
                     estaSobreImagen.clima
                       ? 'z-20 bg-[#8080804f] backdrop-blur-lg'
                       : 'invisible'
-                  } flex w-[10rem] flex-row items-center justify-center rounded-lg py-2 group`}
+                  } group flex w-[10rem] flex-row items-center justify-center rounded-lg py-2`}
                   onMouseEnter={() => manejarMouseSobreImagen('clima')}
                 >
                   <img
@@ -451,7 +478,7 @@ export const Display4 = () => {
                         : 'h-[0px] scale-90 opacity-0'
                     } transition-all duration-500 ease-out`}
                   />
-                  <span className="ml-[4px] font-semibold text-[#FFFFFFFF] group-hover:text-[#147CE5] transition-colors duration-500">
+                  <span className="ml-[4px] font-semibold text-[#FFFFFFFF] transition-colors duration-500 group-hover:text-[#147CE5]">
                     Deploy
                   </span>
                 </a>
