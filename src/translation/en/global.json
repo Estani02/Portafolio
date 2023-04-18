@@ -8,9 +8,11 @@
     },
     "display_1": {
         "hello": "Hello, I´m ",
+        "full stack": "Desarrollador Full Stack",
         "trans": "Transforming your ideas into digital reality."
     },
     "display_2": {
+        "cv": "Preview Resume",
         "about": "About",
         "im_intro": "I’m introduce myself",
         "skill": "My Skills",
