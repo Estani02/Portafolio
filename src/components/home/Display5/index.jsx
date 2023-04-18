@@ -17,19 +17,19 @@ const Display5 = () => {
         </h4>
       </div>
       <ul className="mt-[5rem] flex w-full flex-row md:justify-around justify-between">
-        <li className='md:hover:scale-125 md:transition-transform duration-500 group'>
+        <li className='md:hover:scale-125 md:transition-transform md:duration-500 group'>
           <a href="mailto:estaniolmedo@gmail.com" target='_blank' className="flex flex-col items-center justify-center">
             <img src={gmail} alt="Icon Gmail" className="h-[3rem]" />
             <span className="font-bold text-[#FFFFFFFF] group-hover:text-[#bfb9b9] transition-colors duration-500">{t('display_5.gmail')}</span>
           </a>
         </li>
-        <li className='md:hover:scale-125 md:transition-transform duration-500 group'>
+        <li className='md:hover:scale-125 md:transition-transform md:duration-500 group'>
           <a href="https://www.linkedin.com/in/estanislao-olmedo-208510247/" target='_blank' className="flex flex-col items-center justify-center">
             <img src={linkedin} alt="Icon Linkedin" className="h-[3rem]" />
             <span className="font-bold text-[#FFFFFFFF] group-hover:text-[#bfb9b9] transition-colors duration-500">{t('display_5.linkedin')}</span>
           </a>
         </li>
-        <li className='md:hover:scale-125 md:transition-transform duration-500 group'>
+        <li className='md:hover:scale-125 md:transition-transform md:duration-500 group'>
           <a href="https://github.com/Estani02" target='_blank' className="flex flex-col items-center justify-center">
             <img src={github} alt="Icon GituHub" className="h-[3rem]" />
             <span className="font-bold text-[#FFFFFFFF] group-hover:text-[#bfb9b9] transition-colors duration-500" id='Contact'>{t('display_5.github')}</span>
