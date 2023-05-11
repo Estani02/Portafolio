@@ -10,6 +10,7 @@ export default function NavBar() {
   const [navResponsive, setNavResponsive] = useState(false);
   const [english, setEnglish] = useState(false);
   const [t, i18n] = useTranslation('global');
+  const [imageSrc, setImageSrc] = useState(mexico);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,12 +62,14 @@ export default function NavBar() {
     if(!english) {
       i18n.changeLanguage("en")
     }
+    const img = new Image();
+    img.src = usa;
+    img.style.display = "none";
+    img.onload = () => {
+      setImageSrc(imageSrc === mexico ? usa : mexico);
+      img.style.display = "block";
+    };
   };
-  const handleImagenCargada = () => {
-    // Cuando la nueva imagen se ha cargado, actualizamos el estado
-    setImgLoader(true);
-  };
-  const [imgLoader, setImgLoader] = useState(false)
 
   return (
     <nav className="fixed inset-x-0 top-0 z-[99999] w-screen bg-[#000000d1] p-[10px] text-[#71787B] backdrop-blur-lg md:flex md:w-full md:justify-center">
@@ -87,8 +90,8 @@ export default function NavBar() {
             class="inline-flex cursor-pointer items-center justify-center whitespace-nowrap rounded-lg px-4 py-2 w-[140px] gap-2 text-sm font-medium text-[#676c67] focus:text-white transition-colors duration-300"
             onClick={handleLanguage}
           >
-            <img src={!english ? mexico : usa} onLoad={handleImagenCargada} alt="" />
-            <p className="md:block">{imgLoader && !english ? 'Español (MX)' : 'English (US)'}</p>
+            <img src={imageSrc} alt="language flag" />
+            <p className="md:block">{imageSrc && !english ? 'Español (MX)' : 'English (US)'}</p>
           </button>
         </div>
             <button
