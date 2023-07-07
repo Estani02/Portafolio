@@ -18,49 +18,49 @@ export const Display3 = () => {
         <h4 className='text-[1.25rem] md:text-[1.5rem] font-semibold'>{t('display_3.h4')}</h4>
       </div>
       <div className="flec w-full flex-col">
-        <div className="grid grid-rows-6 md:grid-cols-3 md:grid-rows-2 gap-8 justify-items-center">
+        <div className="grid grid-rows-6 md:grid-cols-2 md:grid-rows-3 xl:grid-cols-3 xl:grid-rows-2 gap-8 justify-items-center">
           <div className="flex flex-col items-center justify-center w-[20.438rem]">
             <img src={dev} alt="" className='h-[40px] md:h-auto' />
             <span className="text-[1.25rem] md:text-[1.5rem] font-medium">{t('display_3.Development.titile')}</span>
             <p className="text-center">
-            {t('display_3.Development.description')}
+              {t('display_3.Development.description')}
             </p>
           </div>
           <div className="flex flex-col items-center justify-center w-[20.438rem]">
             <img src={maintenance} alt="" className='h-[40px] md:h-auto' />
             <span className="text-[1.25rem] md:text-[1.5rem] font-medium">{t('display_3.Maintenance.titile')}</span>
             <p className="text-center">
-            {t('display_3.Maintenance.description')}
+              {t('display_3.Maintenance.description')}
             </p>
           </div>
           <div className="flex flex-col items-center justify-center w-[20.438rem]">
             <img src={seo} alt="" className='h-[40px] md:h-auto' />
             <span className="text-[1.25rem] md:text-[1.5rem] font-medium">SEO</span>
             <p className="text-center">
-            {t('display_3.SEO.description')}
+              {t('display_3.SEO.description')}
             </p>
           </div>
           <div className="flex flex-col items-center justify-center w-[20.438rem]">
             <img src={web} alt="" className='h-[40px] md:h-auto' />
             <span className="text-[1.25rem] md:text-[1.5rem] font-medium whitespace-nowrap">
-            {t('display_3.Web_Application.titile')}
+              {t('display_3.Web_Application.titile')}
             </span>
             <p className="text-center">
-            {t('display_3.Web_Application.description')}
+              {t('display_3.Web_Application.description')}
             </p>
           </div>
           <div className="flex flex-col items-center justify-center w-[20.438rem]">
             <img src={performance} alt="" className='h-[40px] md:h-auto' />
             <span className="text-[1.25rem] md:text-[1.5rem] font-medium">{t('display_3.Performance.titile')}</span>
             <p className="text-center">
-            {t('display_3.Performance.description')}
+              {t('display_3.Performance.description')}
             </p>
           </div>
           <div className="flex flex-col items-center justify-center w-[20.438rem]">
             <img src={crative} alt="" className='h-[40px] md:h-auto' />
             <span className="text-[1.25rem] md:text-[1.5rem] font-medium">{t('display_3.Creative_Design.titile')}</span>
             <p className="text-center">
-            {t('display_3.Creative_Design.description')}
+              {t('display_3.Creative_Design.description')}
             </p>
           </div>
         </div>

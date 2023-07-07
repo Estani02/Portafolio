@@ -48,25 +48,25 @@ export default function NavBar() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  
+
   function handleChange() {
     setNavResponsive(!navResponsive);
   }
 
-  function handleLanguage () {
+  function handleLanguage() {
     setEnglish(!english);
-    if(english) {
+    if (english) {
       i18n.changeLanguage("es")
     }
-    if(!english) {
+    if (!english) {
       i18n.changeLanguage("en")
     }
   };
-  
+
   return (
-    <nav className="fixed inset-x-0 top-0 z-[99999] w-screen bg-[#000000d1] p-[10px] text-[#71787B] backdrop-blur-lg md:flex md:w-full md:justify-center">
-      <div class="mx-auto flex max-w-screen-xl flex-col items-center justify-between md:w-full md:flex-row">
-        <div className="flex w-full flex-row justify-between px-2 md:w-auto md:px-0">
+    <nav className="fixed inset-x-0 top-0 z-[99999] w-screen bg-[#000000d1] p-[10px] text-[#71787B] backdrop-blur-lg lg:flex lg:w-full lg:justify-center">
+      <div class="mx-auto flex max-w-screen-xl flex-col items-center justify-between lg:w-full lg:flex-row">
+        <div className="flex w-full flex-row justify-between px-2 lg:w-auto lg:px-0">
           <a
             href="#Home"
             className="text-[1.7em] font-semibold text-[#ffffff98] no-underline transition-colors duration-500 hover:text-[#ffffff]"
@@ -76,22 +76,22 @@ export default function NavBar() {
             </span>
           </a>
           <div className="flex flex-row">
-          <div class="flex items-end md:hidden">
-          <button
-            type="button"
-            class="inline-flex cursor-pointer items-center justify-center whitespace-nowrap rounded-lg px-4 py-2 w-[140px] gap-2 text-sm font-medium text-[#676c67] focus:text-white transition-colors duration-300"
-            onClick={handleLanguage}
-          >
-            <img src={usa} alt="" hidden />
-            <img src={mexico} alt="" hidden />
-            <img src={!english ? mexico : usa} alt="flag languages" />
-            <p className="md:block">{!english ? 'Español (MX)' : 'English (US)'}</p>
-          </button>
-        </div>
+            <div class="flex items-end lg:hidden">
+              <button
+                type="button"
+                class="inline-flex cursor-pointer items-center justify-center whitespace-nowrap rounded-lg px-4 py-2 w-[140px] gap-2 text-sm font-medium text-[#676c67] focus:text-white transition-colors duration-300"
+                onClick={handleLanguage}
+              >
+                <img src={usa} alt="" hidden />
+                <img src={mexico} alt="" hidden />
+                <img src={!english ? mexico : usa} alt="flag languages" />
+                <p className="lg:block">{!english ? 'Español (MX)' : 'English (US)'}</p>
+              </button>
+            </div>
             <button
               data-collapse-toggle="navbar-default"
               type="button"
-              class="ml-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 focus:outline-none focus:ring-2 focus:ring-slate-600 dark:text-gray-400 dark:focus:ring-gray-600 md:hidden transition-all duration-300"
+              class="ml-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 focus:outline-none focus:ring-2 focus:ring-slate-600 dark:text-gray-400 dark:focus:ring-gray-600 lg:hidden transition-all duration-300"
               aria-controls="navbar-default"
               aria-expanded="false"
               onClick={handleChange}
@@ -112,28 +112,26 @@ export default function NavBar() {
             </button>
           </div>
         </div>
-        <div class="md:flex items-center md:order-2 hidden">
+        <div class="lg:flex items-center lg:order-2 hidden">
           <button
             type="button"
-            class="inline-flex cursor-pointer items-center justify-center whitespace-nowrap rounded-lg px-4 py-2 w-[140px] gap-2 text-sm font-medium text-[#676c67] transition-colors duration-500 md:hover:text-[#ffffff98]"
+            class="inline-flex cursor-pointer items-center justify-center whitespace-nowrap rounded-lg px-4 py-2 w-[140px] gap-2 text-sm font-medium text-[#676c67] transition-colors duration-500 lg:hover:text-[#ffffff98]"
             onClick={handleLanguage}
           >
             <img src={!english ? mexico : usa} alt="flag languages" />
-            <p className="hidden md:block">{!english ? 'Español (MX)' : 'English (US)'}</p>
+            <p className="hidden lg:block">{!english ? 'Español (MX)' : 'English (US)'}</p>
           </button>
         </div>
         <div
-          class={`${
-            !navResponsive && 'hidden'
-          } md:w-auto" id="navbar-default mt-1 w-full rounded-lg bg-[#00000068] md:block md:bg-transparent`}
+          class={`${!navResponsive && 'hidden'
+            } lg:w-auto" id="navbar-default mt-1 w-full rounded-lg bg-[#00000068] lg:block lg:bg-transparent`}
         >
-          <ul className="flex flex-col font-medium md:ml-[22px] md:flex-row md:items-center md:justify-center md:gap-[2.5rem] md:bg-transparent">
+          <ul className="flex flex-col font-medium lg:ml-[22px] lg:flex-row lg:items-center lg:justify-center lg:gap-[2.5rem] lg:bg-transparent">
             <li>
               <a
                 href="#Home"
-                className={`${
-                  section === 'Home' ? 'text-[#ffffff]' : ''
-                } block rounded py-2 pl-3 pr-4 font-normal text-[#676c67] transition-colors duration-500 md:bg-transparent md:no-underline md:hover:text-[#ffffff98]`}
+                className={`${section === 'Home' ? 'text-[#ffffff]' : ''
+                  } block rounded py-2 pl-3 pr-4 font-normal text-[#676c67] transition-colors duration-500 lg:bg-transparent lg:no-underline lg:hover:text-[#ffffff98]`}
                 onClick={handleChange}
               >
                 {t('nav.home')}
@@ -142,9 +140,8 @@ export default function NavBar() {
             <li>
               <a
                 href="#About"
-                className={`${
-                  section === 'About' ? 'text-[#ffffff]' : ''
-                } block whitespace-nowrap rounded py-2 pl-3 pr-4 font-normal text-[#676c67] transition-colors duration-500 md:bg-transparent md:no-underline md:hover:text-[#ffffff98]`}
+                className={`${section === 'About' ? 'text-[#ffffff]' : ''
+                  } block whitespace-nowrap rounded py-2 pl-3 pr-4 font-normal text-[#676c67] transition-colors duration-500 lg:bg-transparent lg:no-underline lg:hover:text-[#ffffff98]`}
                 onClick={handleChange}
               >
                 {t('nav.about')}
@@ -153,9 +150,8 @@ export default function NavBar() {
             <li>
               <a
                 href="#Service"
-                className={`${
-                  section === 'Service' ? 'text-[#ffffff]' : ''
-                } block rounded py-2 pl-3 pr-4 font-normal text-[#676c67] transition-colors duration-500 md:bg-transparent md:no-underline md:hover:text-[#ffffff98]`}
+                className={`${section === 'Service' ? 'text-[#ffffff]' : ''
+                  } block rounded py-2 pl-3 pr-4 font-normal text-[#676c67] transition-colors duration-500 lg:bg-transparent lg:no-underline lg:hover:text-[#ffffff98]`}
                 onClick={handleChange}
               >
                 {t('nav.service')}
@@ -164,9 +160,8 @@ export default function NavBar() {
             <li>
               <a
                 href="#Projects"
-                className={`${
-                  section === 'Projects' ? 'text-[#ffffff]' : ''
-                } block rounded py-2 pl-3 pr-4 font-normal text-[#676c67] transition-colors duration-500 md:bg-transparent md:no-underline md:hover:text-[#ffffff98]`}
+                className={`${section === 'Projects' ? 'text-[#ffffff]' : ''
+                  } block rounded py-2 pl-3 pr-4 font-normal text-[#676c67] transition-colors duration-500 lg:bg-transparent lg:no-underline lg:hover:text-[#ffffff98]`}
                 onClick={handleChange}
               >
                 {t('nav.projects')}
@@ -175,9 +170,8 @@ export default function NavBar() {
             <li>
               <a
                 href="#Contact"
-                className={`${
-                  section === 'Contact' ? 'text-[#ffffff]' : ''
-                } block rounded py-2 pl-3 pr-4 font-normal text-[#676c67] transition-colors duration-500 md:bg-transparent md:no-underline md:hover:text-[#ffffff98]`}
+                className={`${section === 'Contact' ? 'text-[#ffffff]' : ''
+                  } block rounded py-2 pl-3 pr-4 font-normal text-[#676c67] transition-colors duration-500 lg:bg-transparent lg:no-underline lg:hover:text-[#ffffff98]`}
                 onClick={handleChange}
               >
                 {t('nav.contact')}
