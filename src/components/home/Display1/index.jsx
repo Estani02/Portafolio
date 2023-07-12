@@ -13,7 +13,7 @@ export const Display1 = () => {
   }, []);
 
   return (
-    <section className="relative flex h-screen flex-col items-center justify-center" id='Home'>
+    <section className="relative flex h-screen flex-col items-center justify-center bg-black -z-10" id='Home'>
       <div className={s.background} />
       <picture className={`${show ? 'opacity-100' : 'opacity-0'} transition-opacity duration-500`}>
         <source
