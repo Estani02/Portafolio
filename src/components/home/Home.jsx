@@ -23,7 +23,7 @@ export default function Home() {
           <LazyDisplay5 />
         </Suspense>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
