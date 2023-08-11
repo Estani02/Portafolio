@@ -10,8 +10,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/cv-estanislao-olmedo' element={<Pdf />} />
-      </Routes>
-      
+      </Routes> 
     </div>
   );
 }

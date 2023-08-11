@@ -2,7 +2,7 @@
 import React from 'react';
 import github from '../../../imag/github.svg';
 import deploy from '../../../imag/deploy.svg';
-import clima from '../../../imag/clima.jpg';
+import solaz from '../../../imag/solaz.jpg';
 import movie from '../../../imag/movie.jpg';
 import food from '../../../imag/food.jpg';
 import refugio from '../../../imag/refugio.jpg';
@@ -13,6 +13,50 @@ export const CardsResponsive = () => {
 
   return (
     <ul className="flex flex-col p-3 md:hidden gap-5">
+      <li className="flex flex-col items-center justify-center gap-2">
+        <h4 className="border-b-2 border-solid border-white text-[1.5rem] font-bold text-[#FFFFFFFF]">
+          SOLAZ CLUB
+        </h4>
+        <img src={solaz} alt="" />
+        <div className="flex w-full flex-col items-center gap-2">
+          <div className="flex w-full flex-col gap-1 rounded-lg bg-[#8080804f] p-2 backdrop-blur-lg">
+            <div>
+              <p className="text-[0.75rem] text-[#FFFFFFFF]">
+                <b className="text-[0.8rem]">{t('display_4.area')}</b>FrontEnd
+              </p>
+              <p className="text-[0.75rem] text-[#FFFFFFFF]">
+                <b className="text-[0.8rem]">{t('display_4.tecno')}</b>Typescript, NextJS,
+                  Tailwind, MaterialUI, Nodemailer, Sweetalert
+              </p>
+            </div>
+            <p className="text-center text-[0.75rem] text-[#FFFFFFFF]">
+              {t('display_4.more_details')}
+            </p>
+          </div>
+          <div className="flex w-full flex-row justify-around">
+            <a
+              href="https://github.com/Estani02/solaz"
+              className="flex h-12 w-[130px] flex-row items-center justify-center rounded-lg bg-[#8080804f] py-2 backdrop-blur-lg"
+              target=" _blank"
+            >
+              <img src={github} alt="" className="h-[30px]" />
+              <span className="ml-[4px] font-semibold text-[#FFFFFFFF] transition-colors duration-500 group-hover:text-[#147CE5]">
+                {t('display_4.repo')}
+              </span>
+            </a>
+            <a
+              href="https://solaz-club.vercel.app/"
+              target=" _blank"
+              className="flex h-12 w-[130px] flex-row items-center justify-center rounded-lg bg-[#8080804f] py-2 backdrop-blur-lg"
+            >
+              <img src={deploy} alt="" className="h-[30px]" />
+              <span className="ml-[4px] font-semibold text-[#FFFFFFFF] transition-colors duration-500 group-hover:text-[#147CE5]">
+                Deploy
+              </span>
+            </a>
+          </div>
+        </div>
+      </li>
       <li className="flex flex-col items-center justify-center gap-2">
         <h4 className="border-b-2 border-solid border-white text-[1.5rem] font-bold text-[#FFFFFFFF]">
           Refugio de animales
@@ -147,49 +191,6 @@ export const CardsResponsive = () => {
         </div>
       </li>
       {/* /////////////////////////////////////////////////////////// */}
-      <li className="flex flex-col items-center justify-center gap-2">
-        <h4 className="border-b-2 border-solid border-white text-[1.5rem] font-bold text-[#FFFFFFFF]">
-          Weather App
-        </h4>
-        <img src={clima} alt="" />
-        <div className="flex w-full flex-col items-center gap-2">
-          <div className="flex w-full flex-col gap-1 rounded-lg bg-[#8080804f] p-2 backdrop-blur-lg">
-            <div>
-              <p className="text-[0.75rem] text-[#FFFFFFFF]">
-                <b className="text-[0.8rem]">{t('display_4.area')}</b>FrontEnd
-              </p>
-              <p className="text-[0.75rem] text-[#FFFFFFFF]">
-                <b className="text-[0.8rem]">{t('display_4.tecno')}</b>React, CSS
-              </p>
-            </div>
-            <p className="text-center text-[0.75rem] text-[#FFFFFFFF]">
-              {t('display_4.more_details')}
-            </p>
-          </div>
-          <div className="flex w-full flex-row justify-around">
-            <a
-              href="https://github.com/Estani02/Weather-App"
-              className="flex h-12 w-[130px] flex-row items-center justify-center rounded-lg bg-[#8080804f] py-2 backdrop-blur-lg"
-              target=" _blank"
-            >
-              <img src={github} alt="" className="h-[30px]" />
-              <span className="ml-[4px] font-semibold text-[#FFFFFFFF] transition-colors duration-500 group-hover:text-[#147CE5]">
-                {t('display_4.repo')}
-              </span>
-            </a>
-            <a
-              href="https://weather-app-olemdo.surge.sh/"
-              target=" _blank"
-              className="flex h-12 w-[130px] flex-row items-center justify-center rounded-lg bg-[#8080804f] py-2 backdrop-blur-lg"
-            >
-              <img src={deploy} alt="" className="h-[30px]" />
-              <span className="ml-[4px] font-semibold text-[#FFFFFFFF] transition-colors duration-500 group-hover:text-[#147CE5]">
-                Deploy
-              </span>
-            </a>
-          </div>
-        </div>
-      </li>
     </ul>
   );
 };
